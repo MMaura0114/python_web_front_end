@@ -94,7 +94,7 @@ const baseQueryWithRefresh: BaseQueryFn<
     return result;
 };
 export const rtkApi = createApi({
-    baseQuery: baseQuery,
+    baseQuery: baseQueryWithRefresh,
     reducerPath: "rtkquery",
     endpoints: () => ({}),
 });
